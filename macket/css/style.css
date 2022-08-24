@@ -23,6 +23,12 @@ li {
 img {
   vertical-align: top;
 }
+input:active,
+input:hover,
+input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
 h1,
 h2,
 h3,
@@ -215,6 +221,11 @@ a {
   bottom: 0;
   width: 470px;
   height: 60px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
   background: #ec7979;
   color: white;
   border-radius: 0 0 10px 10px;
@@ -495,7 +506,7 @@ a {
 }
 .about__text-comment {
   padding-top: 30px;
-  width: 370px;
+  max-width: 370px;
   height: 180px;
   font-family: "Raleway";
   font-size: 18px;
@@ -625,12 +636,15 @@ a {
 .contact__form {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .contact__us {
-  margin-left: 170px;
   display: flex;
+  flex: 1 1 50%;
   flex-direction: column;
-  padding-left: 50px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -639,16 +653,17 @@ a {
   color: #bdbdbd;
 }
 .contact__input {
-  width: 571px;
   height: 44px;
   border: 1px solid;
   border-color: white white #bdbdbd;
   margin-bottom: 30px;
 }
 .contact__message {
+  flex: 1 1 auto;
   padding-left: 30px;
 }
 textarea {
+  width: 100%;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -657,6 +672,7 @@ textarea {
   color: #bdbdbd;
   border: 1px solid;
   border-color: white white #bdbdbd;
+  resize: none;
 }
 .contact__btn {
   text-align: center;
