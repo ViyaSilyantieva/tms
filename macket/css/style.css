@@ -101,7 +101,6 @@ a {
   text-transform: uppercase;
   color: white;
   background: #ec7979;
-  transform: scale(1.1);
 }
 .menu__part:active {
   font-family: "Open Sans";
@@ -341,6 +340,7 @@ a {
   line-height: 41px;
   display: flex;
   align-items: center;
+  color: black;
 }
 .about__block-text {
   font-family: "Raleway";
@@ -351,6 +351,7 @@ a {
   display: flex;
   align-items: center;
   padding-top: 50px;
+  color: black;
 }
 .about__btn {
   cursor: pointer;
