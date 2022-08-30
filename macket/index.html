@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page</title>
+    <link rel="favicon" href="img/favicon.png" type="image/png" sizes="10x10">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -13,13 +14,20 @@
             <div class="header__logo">
             <img class="logo" src="img/logo.png">
             </div>
-            <nav class="header__menu">
-                <button class="menu__part"><a href="#Features">Features</a></button>
-                <button class="menu__part"><a href="#About">About</a></button>
-                <button class="menu__part"><a href="#Pricing">Pricing</a></button>
-                <button class="menu__part"><a href="#Revlews">Revlews</a></button>
-                <button class="menu__part"><a href="#Contact">Contact</a></button>
-            </nav>
+            <div class="menu">
+                <div class="menu__burger" onclick="toggleMenu()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <nav class="header__menu">
+                    <a class="menu__part" href="#Features">Features</a>
+                    <a class="menu__part" href="#About">About</a>
+                    <a class="menu__part" href="#Pricing">Pricing</a>
+                    <a class="menu__part" href="#Revlews">Revlews</a>
+                    <a class="menu__part" href="#Contact">Contact</a>
+                </nav>
+            </div>
         </div>    
         <div class="axit__content">
             <div class="axit__content-text">
@@ -50,13 +58,13 @@
                 Aenean euismod bibendum laoreet.</h5>
         </div>
         <div class="social__icon">
-            <p><a href="https://facebook.com/"><img class="icon" src="img/facebook_icon.svg"></p>
-            <p><a href="https://twitter.com/"><img class="icon" src="img/twitter_icon.svg"></p>
-            <p><a href="https://ru.linkedin.com/"><img class="icon" src="img/linkedin_icon.svg"></p>
-            <p><a href="https://www.pinterest.com/"><img class="icon" src="img/pinterest_icon.svg"></p>
-            <p><a href="https://www.instagram.com/"><img class="icon" src="img/instagram_icon.svg"></p>
-            <p><a href="https://github.com/"><img class="icon" src="img/github_icon.svg"></p>
-            <p><a href="https://rss.com/"><img class="icon" src="img/rss_icon.svg"></p>
+            <p><a href="https://facebook.com/"><img class="icon" src="img/facebook_icon.svg"></a></p>
+            <p><a href="https://twitter.com/"><img class="icon" src="img/twitter_icon.svg"></a></p>
+            <p><a href="https://ru.linkedin.com/"><img class="icon" src="img/linkedin_icon.svg"></a></p>
+            <p><a href="https://www.pinterest.com/"><img class="icon" src="img/pinterest_icon.svg"></a></p>
+            <p><a href="https://www.instagram.com/"><img class="icon" src="img/instagram_icon.svg"></a></p>
+            <p><a href="https://github.com/"><img class="icon" src="img/github_icon.svg"></a></p>
+            <p><a href="https://rss.com/"><img class="icon" src="img/rss_icon.svg"></a></p>
         </div>
     </section>
     <section class="about__wrapper-tabs" id="Features">
@@ -179,7 +187,7 @@
             <h5 class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
         </div>
         <div class="about__customers-comment">
-            <div class="about__comment">
+            <div class="about__comment1">
                 <div class="about__text-comment">Lorem ipsum dolor sit amet,<br>
                     consectetur adipisicing elit. Doloribus<br> 
                     accusamus expedita repellat similique<br>
@@ -194,7 +202,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about__comment">
+            <div class="about__comment2">
                 <div class="about__text-comment">Lorem ipsum dolor sit amet,<br>
                     consectetur adipisicing elit. Doloribus<br> 
                     accusamus expedita repellat similique<br>
@@ -209,7 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about__comment">
+            <div class="about__comment3">
                 <div class="about__text-comment">Lorem ipsum dolor sit amet,<br>
                     consectetur adipisicing elit. Doloribus<br> 
                     accusamus expedita repellat similique<br>
@@ -264,5 +272,6 @@
         </div>
         <p class="footer__text">© 2015 Axure Themes</p>
     </section>
+    <script src="js/index.js"></script>
 </body>
 </html>
